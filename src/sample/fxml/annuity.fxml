@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="409.0" prefWidth="680.0" stylesheets="../style/style.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AnnuityController">
+   <children>
+      <TableView fx:id="table" prefHeight="367.0" prefWidth="680.0">
+        <columns>
+          <TableColumn fx:id="number" prefWidth="73.0" text="№ платежа"  styleClass="result-table, column-table" />
+          <TableColumn fx:id="sum_plat" prefWidth="130.0" styleClass="result-table, column-table" text="Сумма платежа" />
+            <TableColumn fx:id="osn_dolg" prefWidth="142.0" styleClass="result-table, column-table" text="Основной долг" />
+            <TableColumn fx:id="nach_percent" prefWidth="151.0" styleClass="result-table, column-table" text="Начисленные проценты" />
+            <TableColumn fx:id="ostatok" prefWidth="167.0" styleClass="result-table, column-table" text="Остаток задолженности" />
+        </columns>
+      </TableView>
+      <Label fx:id="total_sum_plat" layoutX="109.0" layoutY="373.0" prefHeight="17.0" prefWidth="93.0" styleClass="label-table" />
+      <Label fx:id="total_osn_dolg" layoutX="251.0" layoutY="373.0" prefHeight="17.0" prefWidth="93.0" styleClass="label-table" />
+      <Label fx:id="total_nach_percent" layoutX="405.0" layoutY="373.0" prefHeight="17.0" prefWidth="93.0" styleClass="label-table" />
+      <Label layoutX="14.0" layoutY="373.0" prefHeight="17.0" prefWidth="40.0" text="Итого" />
+   </children>
+</AnchorPane>

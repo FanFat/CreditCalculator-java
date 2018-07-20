@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="751.0" stylesheets="../style/style.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DifferentiatedController">
+   <center>
+      <TableView fx:id="table" prefHeight="410.0" prefWidth="751.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="number" prefWidth="75.0" styleClass="result-table, column-table" text="№ платежа" />
+          <TableColumn fx:id="sum_plat" prefWidth="167.0" styleClass="result-table, column-table" text="Сумма платежа" />
+            <TableColumn fx:id="osn_dolg" prefWidth="145.0" styleClass="result-table, column-table" text="Основной долг" />
+            <TableColumn fx:id="nach_percent" prefWidth="160.0" styleClass="result-table, column-table" text="Начисленные проценты" />
+            <TableColumn fx:id="ostatok" prefWidth="188.0" styleClass="result-table, column-table" text="Остаток задолженности" />
+        </columns>
+      </TableView>
+   </center>
+   <bottom>
+      <FlowPane prefHeight="34.0" prefWidth="751.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Итого">
+               <FlowPane.margin>
+                  <Insets left="5.0" top="5.0" />
+               </FlowPane.margin></Label>
+            <Label fx:id="total_sum_plat" prefHeight="17.0" prefWidth="89.0" styleClass="label-table">
+               <FlowPane.margin>
+                  <Insets left="105.0" />
+               </FlowPane.margin>
+            </Label>
+            <Label fx:id="total_osn_dolg" prefHeight="17.0" prefWidth="95.0" styleClass="label-table">
+               <FlowPane.margin>
+                  <Insets left="50.0" />
+               </FlowPane.margin>
+            </Label>
+            <Label fx:id="total_nach_percent" prefHeight="17.0" prefWidth="105.0" styleClass="label-table">
+               <FlowPane.margin>
+                  <Insets left="60.0" />
+               </FlowPane.margin>
+            </Label>
+         </children>
+      </FlowPane>
+   </bottom>
+</BorderPane>
